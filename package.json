@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "author": "wjx7794 <wjx7794@163.com>",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev",
+    "lint": "umi lint",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,less}": [
+      "umi lint"
+    ]
+  },
+  "dependencies": {
+    "umi": "^4.3.17"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "@umijs/lint": "^4.3.17",
+    "eslint": "^9.9.1",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.9",
+    "prettier": "3.3.3",
+    "stylelint": "^14",
+    "typescript": "^5.0.3"
+  }
+}
