@@ -13,7 +13,8 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css,less}": [
       "umi lint"
-    ]
+    ],
+    "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "umi": "^4.3.17"
